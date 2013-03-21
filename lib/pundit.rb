@@ -49,11 +49,7 @@ module Pundit
       protected :policy
       protected :verify_authorized
       protected :authorize
-      private :policy_scope!
-      private :policy!
-
       protected :policy_attributes
-      private :policy_attributes!
     end
   end
 
