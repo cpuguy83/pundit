@@ -49,7 +49,6 @@ module Pundit
       protected :policy
       protected :verify_authorized
       protected :authorize
-      protected :policy_attributes
     end
   end
 
