@@ -66,6 +66,10 @@ module Pundit
     true
   end
 
+  def policy_attributes(scope)
+    Pundit.policy_attributes!(current_user, scope)
+  end
+
   def policy_scope(scope)
     Pundit.policy_scope!(current_user, scope)
   end
