@@ -45,6 +45,13 @@ module Pundit
       helper_method :policy_attributes
       helper_method :policy
 
+      protected :policy_scope
+      protected :policy
+      protected :verify_authorized
+      protected :authorize
+      private :policy_scope!
+      private :policy!
+
       protected :policy_attributes
       private :policy_attributes!
     end
